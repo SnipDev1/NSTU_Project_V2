@@ -99,6 +99,15 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.postprocessing": {
+      "version": "3.2.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.physics": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.render-pipelines.core": {
       "version": "14.0.9",
       "depth": 1,
@@ -257,12 +266,6 @@
         "com.unity.ugui": "1.0.0",
         "com.unity.xr.legacyinputhelpers": "2.1.4"
       }
-    },
-    "sh.orels.shaders": {
-      "version": "file:sh.orels.shaders",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
     },
     "sh.orels.shaders.generator": {
       "version": "file:sh.orels.shaders.generator",
