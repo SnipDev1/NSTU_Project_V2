@@ -14,9 +14,9 @@ Material:
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 2
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3005
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
@@ -72,10 +72,10 @@ Material:
     - _AlbedoOpacity: 0.67
     - _Chromatic: 0.004
     - _EmissiveStrenght: 1
-    - _IOR: 1.1
-    - _NormalStrenght: 2
+    - _IOR: 1
+    - _NormalStrenght: 1.99
     - _QueueControl: 0
-    - _QueueOffset: 0
+    - _QueueOffset: 5
     - _RefractiveIndexOrigin: 1
     - _UseNormalMap: 1
     m_Colors: []
