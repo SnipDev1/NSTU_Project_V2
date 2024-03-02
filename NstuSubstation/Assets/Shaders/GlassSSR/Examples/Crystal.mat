@@ -69,11 +69,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlbedoOpacity: 0.67
+    - _AlbedoOpacity: 0.653
     - _Chromatic: 0.004
     - _EmissiveStrenght: 1
     - _IOR: 1
-    - _NormalStrenght: 1.99
+    - _NormalStrenght: 1.83
     - _QueueControl: 0
     - _QueueOffset: 5
     - _RefractiveIndexOrigin: 1
