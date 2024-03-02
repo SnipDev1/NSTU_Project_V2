@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 using Valve.VR.Extras;
@@ -8,14 +7,16 @@ namespace UiLaserPointer
     public class LaserPointer : SteamVR_LaserPointer
     {
         [SerializeField] private Color onPointerInColor;
-        [SerializeField] private Color onPointerClickColor;
-        [SerializeField] private Color onPointerOutColor;
+
+        // [SerializeField] private Color onPointerClickColor;
+        // [SerializeField] private Color onPointerOutColor;
         private Color _previousColor;
+
         public override void OnPointerIn(PointerEventArgs e)
         {
             base.OnPointerIn(e);
             if (!e.target.CompareTag("ButtonUI")) return;
-            
+
             _previousColor = e.target.GetComponent<Image>().color;
             e.target.GetComponent<Image>().color = onPointerInColor;
         }

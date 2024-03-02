@@ -1,5 +1,3 @@
-
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,6 +25,7 @@ namespace UiLevelController
             SetGameObject();
             SetImageFromVariable();
         }
+
         private void SetGameObject()
         {
             if (levelGameObject == null)
@@ -39,6 +38,7 @@ namespace UiLevelController
         {
             levelImage.sprite = levelSprite;
         }
+
         private void SetTextFromVariable()
         {
             levelNameTmp.text = levelName;
