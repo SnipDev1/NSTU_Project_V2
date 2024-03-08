@@ -77,7 +77,7 @@ public class ElementObservation : MonoBehaviour
             currentPoint = (currentPoint - 1) % kElements.Count; // Увеличиваем индекс на 1 либо сбрашиваем до 0, если достигнули последнего объекта
 
             Player.instance.transform.position = kElements[currentPoint].elementObservationPoint.transform.position; // Телепорт к следующей точке
-            Player.instance.transform.LookAt(kElements[currentPoint].elementObject.transform); // Резкий переход камеры на объект ??
+            Player.instance.GetComponentInChildren<Camera>().transform.LookAt(kElements[currentPoint].elementObject.transform); // Резкий переход камеры на объект ??
             audioSource.clip = kElements[currentPoint].elementAudio; // Задаем клип аудиосоурсу, получая его с объекта
             audioSource.Play(); // Проигрыш аудио
 

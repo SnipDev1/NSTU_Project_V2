@@ -2993,6 +2993,7 @@ MonoBehaviour:
     elementHeaderText: 
     elementBodyText: 
     elementAudio: {fileID: 8300000, guid: 128e00eb15691c343a6db8471e775398, type: 3}
+  currentPoint: 0
   imageFade: {fileID: 264575452}
 --- !u!4 &1853570650
 Transform:

@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -40,7 +41,8 @@ public class ScreenFade : MonoBehaviour
     
     private IEnumerator PrevFade()
     {
-    
+        if (element.currentPoint != 0)
+        {
             Image fadeImage = GetComponent<Image>();
             Color fadeColor = fadeImage.color;
             element.StopAudio();
@@ -62,6 +64,11 @@ public class ScreenFade : MonoBehaviour
             }
 
             gameObject.SetActive(false);
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     public void OnNextButton()
