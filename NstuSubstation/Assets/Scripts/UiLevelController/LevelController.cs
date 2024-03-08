@@ -19,26 +19,26 @@ namespace UiLevelController
 
         private void Start()
         {
-            DisplayAllLevels();
+            //DisplayAllLevels();
             ActivateFirstLevel();
             _amountOfLevels = GetAmountOfLevels();
         }
 
-        private void DisplayAllLevels()
+        /*private void DisplayAllLevels()
         {
             foreach (var levelPanel in levelPanelsList)
             {
                 Debug.Log($"Name - {levelPanel.levelInfo.levelName}");
             }
-        }
+        }*/
 
-        private void DeactivateAllLevels()
+        /*private void DeactivateAllLevels()
         {
             foreach (var levelPanel in levelPanelsList)
             {
                 levelPanel.levelInfo.levelGameObject.SetActive(false);
             }
-        }
+        }*/
 
         private void SetStateOfLevelByIndex(int index, bool state)
         {
@@ -62,13 +62,13 @@ namespace UiLevelController
 
         private void ActivateFirstLevel()
         {
-            DeactivateAllLevels();
+            //DeactivateAllLevels();
             SetStateOfLevelByIndex(0, true);
         }
 
         public void PreviousLevel()
         {
-            DeactivateAllLevels();
+           // DeactivateAllLevels();
             if (_currentLevelIndex - 1 >= 0)
             {
                 _currentLevelIndex--;
@@ -84,7 +84,7 @@ namespace UiLevelController
 
         public void NextLevel()
         {
-            DeactivateAllLevels();
+            //DeactivateAllLevels();
             if (_currentLevelIndex + 1 < _amountOfLevels)
             {
                 _currentLevelIndex++;
