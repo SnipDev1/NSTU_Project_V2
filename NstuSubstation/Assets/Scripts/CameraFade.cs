@@ -1,12 +1,15 @@
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class CameraFade : MonoBehaviour
 {
 	[Range (0f, 1f)]
 	public float opacity = 1;
 	public Color color = Color.black;
-
+		
 	public Material material;
+
 	private float startTime = 0;
 	private float startOpacity = 1;
 	private int endOpacity = 1;
@@ -38,17 +41,21 @@ public class CameraFade : MonoBehaviour
 
 	void OnRenderImage (RenderTexture source, RenderTexture destination)
 	{
+
 		if (isFading && duration > 0) {
 			opacity = Mathf.Lerp (startOpacity, endOpacity, (Time.time - startTime) / duration);
 			isFading = opacity != endOpacity;
 		}
 
+		
 		if (opacity == 1f) {
 			Graphics.Blit (source, destination);
 			return;
 		}
+		
 
 		material.color = color;
+		
 		material.SetFloat ("_opacity", opacity);
 		Graphics.Blit (source, destination, material);
 	}
