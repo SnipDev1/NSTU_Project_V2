@@ -87,6 +87,7 @@ public class ScreenFade : MonoBehaviour
     {
         if(nextButton == true)
             StartCoroutine(nameof(NextFade));
+            
 
         if (prevButton == true)
             StartCoroutine(nameof(PrevFade));
