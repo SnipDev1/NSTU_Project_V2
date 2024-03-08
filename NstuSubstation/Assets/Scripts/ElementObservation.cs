@@ -23,7 +23,7 @@ public class ElementObservation : MonoBehaviour
     
     public List<Element> kElements = new();
     
-    private int currentPoint = 0;
+    public int currentPoint = 0;
     private bool isFirstElement = true;
     private bool isLastElement = false;
     private AudioSource audioSource;
@@ -66,7 +66,9 @@ public class ElementObservation : MonoBehaviour
     public void PreviousPoint() // Переход к предыдущей точке осмотра объекта    
     {       
         // ВАЖНО понимать, что из-за этой логики телепорт игрока начинается с 1-й точки, а не с 0-й.
-
+        if (currentPoint == 0)
+            return;
+        
         if (currentPoint != 0)
         {
             if (currentPoint < kElements.Count)

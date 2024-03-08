@@ -40,28 +40,28 @@ public class ScreenFade : MonoBehaviour
     
     private IEnumerator PrevFade()
     {
-        Image fadeImage = GetComponent<Image>();
-        Color fadeColor = fadeImage.color;
-        element.StopAudio();
+    
+            Image fadeImage = GetComponent<Image>();
+            Color fadeColor = fadeImage.color;
+            element.StopAudio();
 
-        while (fadeColor.a < 1f)
-        {
-            fadeColor.a += fadeSpeed * Time.deltaTime;
-            fadeImage.color = fadeColor;
-            yield return null;
-        }
-        
-        element.PreviousPoint();
-        element.ChangePlayerPosition();
-        
-        while (fadeColor.a >= 0f) 
-        {
-            fadeColor.a -= fadeSpeed * Time.deltaTime;
-            fadeImage.color = fadeColor;
-            yield return null;
-        }
+            while (fadeColor.a < 1f)
+            {
+                fadeColor.a += fadeSpeed * Time.deltaTime;
+                fadeImage.color = fadeColor;
+                yield return null;
+            }
 
-        gameObject.SetActive(false);
+            element.PreviousPoint();
+
+            while (fadeColor.a >= 0f)
+            {
+                fadeColor.a -= fadeSpeed * Time.deltaTime;
+                fadeImage.color = fadeColor;
+                yield return null;
+            }
+
+            gameObject.SetActive(false);
     }
 
     public void OnNextButton()
