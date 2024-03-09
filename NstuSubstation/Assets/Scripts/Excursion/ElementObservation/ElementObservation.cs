@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using EPOOutline;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Valve.VR.InteractionSystem;
 
 namespace Excursion.ElementObservation
