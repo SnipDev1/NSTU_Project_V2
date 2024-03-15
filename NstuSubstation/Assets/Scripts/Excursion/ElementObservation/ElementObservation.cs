@@ -65,6 +65,7 @@ namespace Excursion.ElementObservation
 
             Player.instance.transform.position = kElements[currentPoint].elementObservationPoint.transform.position; // Телепорт к следующей точке
             playerCamera.transform.LookAt(kElements[currentPoint].elementObject.transform); // Резкий переход камеры на объект ??
+            PointerController.Instance.SetRotation();
 
             audioSource.clip = kElements[currentPoint].elementAudio; // Задаем клип аудиосоурсу, получая его с объекта
             audioSource.Play();
@@ -85,6 +86,7 @@ namespace Excursion.ElementObservation
 
                 Player.instance.transform.position = kElements[currentPoint].elementObservationPoint.transform.position; // Телепорт к следующей точке
                 playerCamera.transform.LookAt(kElements[currentPoint].elementObject.transform); // Резкий переход камеры на объект ??
+                PointerController.Instance.SetRotation();
             
                 audioSource.clip = kElements[currentPoint].elementAudio; // Задаем клип аудиосоурсу, получая его с объекта
                 audioSource.Play(); // Проигрыш аудио
