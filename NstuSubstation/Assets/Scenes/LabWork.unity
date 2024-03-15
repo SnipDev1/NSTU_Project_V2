@@ -668,7 +668,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &525322064
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -878,7 +878,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &610355376
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2127,7 +2127,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &1165335282
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3010,7 +3010,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &1390174763
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4938,6 +4938,7 @@ GameObject:
   - component: {fileID: 1901143196}
   - component: {fileID: 1901143195}
   - component: {fileID: 1901143194}
+  - component: {fileID: 1901143197}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -5019,6 +5020,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1901143197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901143193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a4f15a3179f1d4993aded11f4d0232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locked: 0
+  markerActive: 1
 --- !u!1001 &1987723403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5053,6 +5068,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1191065389039834223, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2430987712382109169, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3751711961094627757, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
@@ -5259,19 +5278,19 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 142896388}
-  - {fileID: 811933084}
-  - {fileID: 610355379}
-  - {fileID: 1165335285}
-  - {fileID: 535099327}
-  - {fileID: 1209766250}
-  - {fileID: 525322067}
-  - {fileID: 1574906437}
   - {fileID: 1085134254}
-  - {fileID: 1901143196}
-  - {fileID: 2024955371}
-  - {fileID: 1558716649}
-  - {fileID: 1390174766}
+  - {fileID: 1613611764}
   - {fileID: 1133075562}
   - {fileID: 1987723403}
-  - {fileID: 1613611764}
+  - {fileID: 610355379}
+  - {fileID: 1165335285}
+  - {fileID: 1390174766}
+  - {fileID: 525322067}
+  - {fileID: 1574906437}
+  - {fileID: 535099327}
+  - {fileID: 1901143196}
+  - {fileID: 1558716649}
+  - {fileID: 2024955371}
+  - {fileID: 1209766250}
+  - {fileID: 811933084}
+  - {fileID: 142896388}
