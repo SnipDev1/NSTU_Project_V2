@@ -17,40 +17,32 @@ namespace Multimedia
                 elementObservation = FindObjectOfType<ElementObservation>();
             }
         }
+        
 
         public IEnumerator NextClip()
         {
-            PointerController.Instance.ZeroRot();
-            PointerController.Instance.RotationDump();
             if (_isClipCoroutineActive) yield break; // Чтобы не было наложения клипов
             _isClipCoroutineActive = true;
             elementObservation.StopAudio();
             yield return StartCoroutine(fadeEffect.DecreaseOpacity());
             elementObservation.NextPoint();
             yield return StartCoroutine(fadeEffect.IncreaseOpacity());
-            PointerController.Instance.SetRotation();
             _isClipCoroutineActive = false;
-            PointerController.Instance.ZeroRot();
+
         }
-        
         public IEnumerator PreviousClip()
         {
-            PointerController.Instance.ZeroRot();
-            PointerController.Instance.RotationDump();
             if (_isClipCoroutineActive) yield break; 
             _isClipCoroutineActive = true;
             elementObservation.StopAudio();
             yield return StartCoroutine(fadeEffect.DecreaseOpacity());
             elementObservation.PreviousPoint();
             yield return StartCoroutine(fadeEffect.IncreaseOpacity());
-            PointerController.Instance.SetRotation();
             _isClipCoroutineActive = false;
-            PointerController.Instance.ZeroRot();
         }
 
         public void PauseAudio()
         {
-            PointerController.Instance.ZeroRot();
             elementObservation.PauseAudio();
         }
         public void ContinueAudio()

@@ -25,15 +25,11 @@ namespace Multimedia
         public void OnNext()
         {
             StartCoroutine(multimediaController.NextClip());
-            PointerController.Instance.ZeroRot();
-
         }
 
         public void OnPrevious()
         {
             StartCoroutine(multimediaController.PreviousClip());
-            PointerController.Instance.ZeroRot();
-
         }
     }
 }
