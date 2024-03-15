@@ -70,6 +70,8 @@ namespace Excursion.ElementObservation
             audioSource.Play();
 
             kElements[currentPoint].elementOutlinable.OutlineParameters.Enabled = true; // Включение аутлайна новой точки
+            PointerController.Instance.ZeroRot();
+
         }
 
         public void PreviousPoint() // Переход к предыдущей точке осмотра объекта    
@@ -90,6 +92,8 @@ namespace Excursion.ElementObservation
                 audioSource.Play(); // Проигрыш аудио
 
                 kElements[currentPoint].elementOutlinable.OutlineParameters.Enabled = true; // Включение аутлайна новой точки
+                PointerController.Instance.ZeroRot();
+
             }
         }
 

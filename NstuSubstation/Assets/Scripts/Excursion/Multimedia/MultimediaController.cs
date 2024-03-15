@@ -20,6 +20,7 @@ namespace Multimedia
 
         public IEnumerator NextClip()
         {
+            PointerController.Instance.ZeroRot();
             PointerController.Instance.RotationDump();
             if (_isClipCoroutineActive) yield break; // Чтобы не было наложения клипов
             _isClipCoroutineActive = true;
@@ -34,6 +35,7 @@ namespace Multimedia
         
         public IEnumerator PreviousClip()
         {
+            PointerController.Instance.ZeroRot();
             PointerController.Instance.RotationDump();
             if (_isClipCoroutineActive) yield break; 
             _isClipCoroutineActive = true;
@@ -48,6 +50,7 @@ namespace Multimedia
 
         public void PauseAudio()
         {
+            PointerController.Instance.ZeroRot();
             elementObservation.PauseAudio();
         }
         public void ContinueAudio()
