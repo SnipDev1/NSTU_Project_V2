@@ -27,6 +27,7 @@ namespace Multimedia
             yield return StartCoroutine(fadeEffect.DecreaseOpacity());
             elementObservation.NextPoint();
             yield return StartCoroutine(fadeEffect.IncreaseOpacity());
+            PointerController.Instance.SetRotation();
             _isClipCoroutineActive = false;
 
         }
@@ -38,6 +39,7 @@ namespace Multimedia
             yield return StartCoroutine(fadeEffect.DecreaseOpacity());
             elementObservation.PreviousPoint();
             yield return StartCoroutine(fadeEffect.IncreaseOpacity());
+            PointerController.Instance.SetRotation();
             _isClipCoroutineActive = false;
         }
 
