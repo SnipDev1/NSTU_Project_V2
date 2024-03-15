@@ -29,7 +29,7 @@ namespace Multimedia
             yield return StartCoroutine(fadeEffect.IncreaseOpacity());
             PointerController.Instance.SetRotation();
             _isClipCoroutineActive = false;
-
+            PointerController.Instance.ZeroRot();
         }
         
         public IEnumerator PreviousClip()
@@ -43,6 +43,7 @@ namespace Multimedia
             yield return StartCoroutine(fadeEffect.IncreaseOpacity());
             PointerController.Instance.SetRotation();
             _isClipCoroutineActive = false;
+            PointerController.Instance.ZeroRot();
         }
 
         public void PauseAudio()

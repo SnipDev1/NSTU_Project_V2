@@ -24,4 +24,9 @@ public class PointerController : MonoBehaviour
     {
         pointer.transform.rotation = initialRot;
     }
+
+    public void ZeroRot()
+    {
+        pointer.transform.rotation = Quaternion.Euler(0, 0, 0);
+    }
 }
