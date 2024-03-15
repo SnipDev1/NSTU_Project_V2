@@ -6,6 +6,7 @@ using UnityEngine;
 public class PointerController : MonoBehaviour
 {
     public static PointerController Instance { get; private set; }
+    public Quaternion initialRot;
 
     private void Awake()
     {
@@ -14,8 +15,13 @@ public class PointerController : MonoBehaviour
 
     [SerializeField] private GameObject pointer;
 
+    public void RotationDump()
+    {
+        initialRot = pointer.transform.rotation;
+    }
+    
     public void SetRotation()
     {
-        gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+        pointer.transform.rotation = initialRot;
     }
 }

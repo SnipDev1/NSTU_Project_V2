@@ -17,10 +17,10 @@ namespace Multimedia
                 elementObservation = FindObjectOfType<ElementObservation>();
             }
         }
-        
 
         public IEnumerator NextClip()
         {
+            PointerController.Instance.RotationDump();
             if (_isClipCoroutineActive) yield break; // Чтобы не было наложения клипов
             _isClipCoroutineActive = true;
             elementObservation.StopAudio();
@@ -31,8 +31,10 @@ namespace Multimedia
             _isClipCoroutineActive = false;
 
         }
+        
         public IEnumerator PreviousClip()
         {
+            PointerController.Instance.RotationDump();
             if (_isClipCoroutineActive) yield break; 
             _isClipCoroutineActive = true;
             elementObservation.StopAudio();
