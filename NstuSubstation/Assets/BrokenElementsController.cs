@@ -22,6 +22,7 @@ public class BrokenElementsController : MonoBehaviour
     }
     
     public List<BrokenElement> brokenElements = new List<BrokenElement>();
+    public int score;
     
     [SerializeField] private int brokenElementsNum;
 

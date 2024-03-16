@@ -13,6 +13,14 @@ public class ClipboardController : MonoBehaviour
     {
         SetListValues();
     }
+    
+    private void Update()
+    {
+        for (int i = 0; i < elementControllerList.Count; i++)
+        {
+            elementControllerList[i].GetComponentInChildren<Toggle>().onValueChanged.Invoke(BrokenElementsController.Instance.brokenElements[i].isToggle = elementControllerList[i].GetComponentInChildren<Toggle>().isOn);
+        }
+    }
 
     private void SetListValues()
     {
@@ -26,16 +34,13 @@ public class ClipboardController : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        for (int i = 0; i < elementControllerList.Count; i++)
-        {
-            elementControllerList[i].GetComponentInChildren<Toggle>().onValueChanged.Invoke(BrokenElementsController.Instance.brokenElements[i].isToggle = elementControllerList[i].GetComponentInChildren<Toggle>().isOn);
-        }
-    }
-
     private GameObject InstantiateGameObject()
     {
         return Instantiate(elementPrefab, parentGameObject.transform);
+    }
+
+    public void OnSendResultsButtonClick()
+    {
+        ResultsController.Instance.CheckResults();
     }
 }
