@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
+using UnityEngine.UI;
 
 public class BrokenElementsController : MonoBehaviour
 {
@@ -14,12 +15,13 @@ public class BrokenElementsController : MonoBehaviour
         public int brokenElementID;
         
         public bool isBroken;
+        public bool isToggle;
     }
     
     [SerializeField] private List<BrokenElement> brokenElements = new List<BrokenElement>();
     
     [SerializeField] private int brokenElementsNum;
-    
+
     public void Start()
     {
         SetRandomBoolForSomeInstances(brokenElementsNum);
