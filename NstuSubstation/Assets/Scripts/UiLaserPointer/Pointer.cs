@@ -9,16 +9,17 @@ namespace UiLaserPointer
         public GameObject dot;
         public VRInputModule vrInputModule;
 
-        private LineRenderer _lineRenderer;
+        private LineRenderer lineRenderer;
     
         private void Awake()
         {
-            _lineRenderer = GetComponent<LineRenderer>();
+            lineRenderer = GetComponent<LineRenderer>();
         }
         
         private void Update()
         {
             UpdateLine();
+            ResetRotation();
         }
 
         private void UpdateLine()
@@ -36,8 +37,8 @@ namespace UiLaserPointer
 
             dot.transform.position = endPosition;
         
-            _lineRenderer.SetPosition(0, transform.position);
-            _lineRenderer.SetPosition(1, endPosition);
+            lineRenderer.SetPosition(0, transform.position);
+            lineRenderer.SetPosition(1, endPosition);
         }
 
         private RaycastHit CreateRaycast()
@@ -49,9 +50,9 @@ namespace UiLaserPointer
             return hit;
         }
 
-        public void wtf()
+        public void ResetRotation()
         {
-            Debug.Log("WAAAAY");
+            gameObject.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
         }
     }
 }
