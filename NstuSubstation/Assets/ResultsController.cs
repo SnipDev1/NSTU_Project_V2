@@ -13,7 +13,6 @@ public class ResultsController : MonoBehaviour
             if (BrokenElementsController.Instance.brokenElements[i].isBroken &&
                 BrokenElementsController.Instance.brokenElements[i].isToggle)
             {
-                Debug.Log("АХАХАХАХ");
             }
             else
             {
