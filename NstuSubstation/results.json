@@ -1,0 +1,67 @@
+{
+    "brokenElementObject": {
+        "instanceID": 0
+    },
+    "brokenElementName": "1",
+    "brokenElementID": 0,
+    "isBroken": false,
+    "isToggle": false,
+    "brokenElementMaterial": {
+        "instanceID": 0
+    }
+}{
+    "brokenElementObject": {
+        "instanceID": 0
+    },
+    "brokenElementName": "2",
+    "brokenElementID": 0,
+    "isBroken": false,
+    "isToggle": false,
+    "brokenElementMaterial": {
+        "instanceID": 0
+    }
+}{
+    "brokenElementObject": {
+        "instanceID": 0
+    },
+    "brokenElementName": "3",
+    "brokenElementID": 0,
+    "isBroken": false,
+    "isToggle": false,
+    "brokenElementMaterial": {
+        "instanceID": 0
+    }
+}{
+    "brokenElementObject": {
+        "instanceID": 0
+    },
+    "brokenElementName": "4",
+    "brokenElementID": 0,
+    "isBroken": true,
+    "isToggle": false,
+    "brokenElementMaterial": {
+        "instanceID": 0
+    }
+}{
+    "brokenElementObject": {
+        "instanceID": 0
+    },
+    "brokenElementName": "5",
+    "brokenElementID": 0,
+    "isBroken": false,
+    "isToggle": false,
+    "brokenElementMaterial": {
+        "instanceID": 0
+    }
+}{
+    "brokenElementObject": {
+        "instanceID": 0
+    },
+    "brokenElementName": "6",
+    "brokenElementID": 0,
+    "isBroken": true,
+    "isToggle": false,
+    "brokenElementMaterial": {
+        "instanceID": 0
+    }
+}

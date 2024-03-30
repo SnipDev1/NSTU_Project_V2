@@ -25,12 +25,14 @@ namespace Excursion.ElementObservation
         }
 
         public List<Element> kElements = new();
-
-        public int currentPoint;
-        private bool isFirstElement = true;
-        private bool isLastElement;
+  
         private AudioSource audioSource;
         private Transform playerCamera;
+        
+        private bool isFirstElement = true;
+        private bool isLastElement;
+        
+        public int currentPoint;
 
         private void Start()
         {

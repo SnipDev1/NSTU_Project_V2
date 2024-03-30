@@ -1,38 +1,37 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System.Linq;
 
 public class ResultsController : MonoBehaviour
 {
-    public static ResultsController Instance { get; private set; }
+    private List<BrokenElementsController.BrokenElement> BrokenElement;
+
+    private void Start() => BrokenElement = BrokenElementsController.Instance.brokenElements;
 
     public void CheckResults()
     {
-        for (int i = 0; i < BrokenElementsController.Instance.brokenElements.Count; i++)
-        {
-            if (BrokenElementsController.Instance.brokenElements[i].isBroken &&
-                BrokenElementsController.Instance.brokenElements[i].isToggle)
-            {
-            }
-            else
-            {
-                Debug.Log("ХУЙ САСИ");
-                CreateFile();
-            }
-        }
+        CreateFile();
     }
 
     private void CreateFile()
     {
-        string path = Application.dataPath + "/Results.txt";
-        string[] content = new string[BrokenElementsController.Instance.brokenElements.Count];
-        
-
-        for (int i = 0; i < content.Length; i++)
-        {   
-            content[i] = "Я хуесос";
-
+        if(File.Exists("Labwork #1.json"))
+        {
+            File.Delete("Labwork #1.json");
             
+            for (int i = 0; i < BrokenElement.Count(); i++)
+            {
+                File.AppendAllText("Labwork #1.json", JsonUtility.ToJson(BrokenElement[i], true));
+            }
+        }
+        else
+        {
+            for (int i = 0; i < BrokenElement.Count(); i++)
+            {
+                File.AppendAllText("Labwork #1.json", JsonUtility.ToJson(BrokenElement[i], true));
+            }
         }
     }
 }

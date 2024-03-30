@@ -14,7 +14,7 @@ namespace Excursion.Clipboard
         [SerializeField] private Color defaultColor = Color.gray;
         [SerializeField] private Color chosenColor = Color.cyan;
         [SerializeField] private float timeBetweenUpdate = 1f;
-        private int _currentPoint = -1;
+        private int currentPoint = -1;
 
 
         private void Start()
@@ -66,11 +66,11 @@ namespace Excursion.Clipboard
             while (true)
             {
                 int elementObservationCurrentPoint = elementObservation.currentPoint;
-                if (_currentPoint != elementObservationCurrentPoint && elementObservationCurrentPoint < elementControllerList.Count)
+                if (currentPoint != elementObservationCurrentPoint && elementObservationCurrentPoint < elementControllerList.Count)
                 {
-                    _currentPoint = elementObservationCurrentPoint;
+                    currentPoint = elementObservationCurrentPoint;
                     ChangeAllColorsOnDefault();
-                    ChangeColorOnChooseByIndex(_currentPoint);
+                    ChangeColorOnChooseByIndex(currentPoint);
                 }
 
                 yield return new WaitForSeconds(timeBetweenUpdate);

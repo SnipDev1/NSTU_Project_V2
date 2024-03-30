@@ -7,6 +7,8 @@ public class BrokenElementsController : MonoBehaviour
 {
     public static BrokenElementsController Instance { get; private set; }
     
+    private void Awake() => Instance = this; 
+    
     [Serializable]
     public class BrokenElement
     {
@@ -20,13 +22,9 @@ public class BrokenElementsController : MonoBehaviour
 
         public Material brokenElementMaterial;
     }
-    
     public List<BrokenElement> brokenElements = new List<BrokenElement>();
-    public int score;
     
     [SerializeField] private int brokenElementsNum;
-
-    private void Awake() { Instance = this; }
 
     private void Start()
     {

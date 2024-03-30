@@ -38,9 +38,4 @@ public class ClipboardController : MonoBehaviour
     {
         return Instantiate(elementPrefab, parentGameObject.transform);
     }
-
-    public void OnSendResultsButtonClick()
-    {
-        ResultsController.Instance.CheckResults();
-    }
 }
