@@ -31,5 +31,10 @@ namespace Multimedia
         {
             StartCoroutine(multimediaController.PreviousClip());
         }
+
+        public void OnNextLevel()
+        {
+            SceneController.SceneController.LoadSceneAsync(2);
+        }
     }
 }

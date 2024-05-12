@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using System.Collections.Generic;
+using EPOOutline;
 using Random = UnityEngine.Random;
 
 public class BrokenElementsController : MonoBehaviour
@@ -20,17 +21,23 @@ public class BrokenElementsController : MonoBehaviour
         public bool isBroken;
         public bool isToggle;
 
-        public Material brokenElementMaterial;
+        public Outlinable brokenElementMaterial;
     }
     public List<BrokenElement> brokenElements = new List<BrokenElement>();
     
     [SerializeField] private int brokenElementsNum;
+    public int BrokenElementsNum => brokenElementsNum;
 
     private void Start()
     {
         SetRandomBoolForSomeInstances(brokenElementsNum);
     }
 
+    private void NextPoint()
+    {
+        
+    }
+    
     #region Broken Element Generation & Control
     private void SetRandomBoolForSomeInstances(int count)
     {
@@ -45,6 +52,14 @@ public class BrokenElementsController : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             brokenElements[indexes[i]].isBroken = true;
+        }
+
+        for (int i = 0; i < brokenElements.Count; i++)
+        {
+            if (brokenElements[i].isBroken)
+            {
+                brokenElements[i].brokenElementMaterial.OutlineParameters.Enabled = true;
+            }
         }
     }
 

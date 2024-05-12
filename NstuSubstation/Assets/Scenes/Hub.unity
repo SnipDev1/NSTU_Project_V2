@@ -5046,7 +5046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: "\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430\u044F
-    \u0420\u0430\u0431\u043E\u0442\u0430 \u2116 2"
+    \u0420\u0430\u0431\u043E\u0442\u0430 \u2116 2 (WIP)"
   levelSprite: {fileID: 21300000, guid: 0757d92d515434d448e3590032f13e1c, type: 3}
   levelSceneId: 3
   levelGameObject: {fileID: 3617341353075498200}
@@ -6123,7 +6123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b04d8edef14316349b4ff70d09c11458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: "\u042D\u043A\u0441\u0443\u0440\u0441\u0438\u044F"
+  levelName: "\u042D\u043A\u0441\u043A\u0443\u0440\u0441\u0438\u044F"
   levelSprite: {fileID: 21300000, guid: f128b434ae3530d4e9c5b0b2e2d7d432, type: 3}
   levelSceneId: 1
   levelGameObject: {fileID: 5228945326257999164}
