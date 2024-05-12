@@ -12,7 +12,7 @@ public class ResultsController : MonoBehaviour
 
     public void CheckResults()
     {
-        CreateFile();
+        CreateFile();    
     }
 
     private void CreateFile()
