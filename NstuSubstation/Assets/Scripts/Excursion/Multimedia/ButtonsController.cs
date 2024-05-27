@@ -34,7 +34,7 @@ namespace Multimedia
 
         public void OnNextLevel()
         {
-            SceneController.SceneController.LoadSceneAsync(2);
+            SceneController.SceneController.Instance.LoadSceneAsync(2);
         }
     }
 }

@@ -1482,6 +1482,78 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 6.8
       objectReference: {fileID: 0}
+    - target: {fileID: 5358323233026448290, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5358323233026448290, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015503798859973861, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015503798859973861, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: onDetachedFromHand.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015503798859973861, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015503798859973861, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 736262093}
+    - target: {fileID: 6015503798859973861, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: onDetachedFromHand.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015503798859973861, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: onDetachedFromHand.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 736262093}
+    - target: {fileID: 6015503798859973861, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015503798859973861, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_isKinematic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015503798859973861, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: onDetachedFromHand.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015503798859973861, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: onDetachedFromHand.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_isKinematic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015503798859973861, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Rigidbody, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015503798859973861, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015503798859973861, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: onDetachedFromHand.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Rigidbody, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015503798859973861, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: onDetachedFromHand.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015503798859973861, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015503798859973861, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+      propertyPath: onDetachedFromHand.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6155284841347744108, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
       propertyPath: m_Name
       value: Clipboard
@@ -1627,6 +1699,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+--- !u!54 &736262093 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 5358323233026448290, guid: 4b453763bd01b03498fa1e2b87b97908, type: 3}
+  m_PrefabInstance: {fileID: 736262092}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &755841292
 GameObject:
   m_ObjectHideFlags: 0
@@ -8329,7 +8406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initializeSteamVROnAwake: 1
-  doNotDestroy: 1
+  doNotDestroy: 0
   steamvr_render: {fileID: 0}
 --- !u!114 &114000012412345651
 MonoBehaviour:

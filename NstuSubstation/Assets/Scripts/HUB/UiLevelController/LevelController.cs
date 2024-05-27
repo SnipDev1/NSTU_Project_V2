@@ -100,7 +100,7 @@ namespace UiLevelController
 
         public void PlayLevel()
         {
-            SceneController.SceneController.LoadSceneAsync(GetSceneIdByIndex(_currentLevelIndex));
+            SceneController.SceneController.Instance.LoadSceneAsync(GetSceneIdByIndex(_currentLevelIndex));
         }
     }
 }

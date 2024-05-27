@@ -1,13 +1,45 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace SceneController
 {
-    public abstract class SceneController: MonoBehaviour
+    public class SceneController: MonoBehaviour
     {
-        public static void LoadSceneAsync(int sceneId)
+        public static SceneController Instance { get; private set; }
+
+        private void Awake()
         {
-            SceneManager.LoadSceneAsync(sceneId);
+            if (Instance != null && Instance != this)
+            {
+                Destroy(this);
+            }
+            else
+            {
+                Instance = this;
+            }
+            DontDestroyOnLoad(gameObject);
         }
+
+        private const int LoadSceneId = 4;
+
+        public void LoadSceneAsync(int sceneId)
+        {
+            SceneManager.LoadSceneAsync(LoadSceneId);
+            SceneManager.LoadSceneAsync(sceneId);
+            // StartCoroutine(LoadSceneCoroutine(LoadSceneId));
+            // StartCoroutine(LoadSceneCoroutine(sceneId));
+        }
+
+        private static IEnumerator LoadSceneCoroutine(int sceneId)
+        {
+            var operation = SceneManager.LoadSceneAsync(sceneId);
+            while(!operation.isDone)
+            {
+                yield return null;
+            }
+        }
+        
     }
 }

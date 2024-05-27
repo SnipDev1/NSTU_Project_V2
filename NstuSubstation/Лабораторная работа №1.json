@@ -1,0 +1,100 @@
+{
+    "brokenElementObject": {
+        "instanceID": 76014
+    },
+    "brokenElementName": "Диспетчерское наименование",
+    "brokenElementID": 0,
+    "isBroken": false,
+    "isToggle": false,
+    "brokenElementMaterial": {
+        "instanceID": 75878
+    }
+}{
+    "brokenElementObject": {
+        "instanceID": 76008
+    },
+    "brokenElementName": "Шкаф РПН",
+    "brokenElementID": 0,
+    "isBroken": true,
+    "isToggle": false,
+    "brokenElementMaterial": {
+        "instanceID": 76026
+    }
+}{
+    "brokenElementObject": {
+        "instanceID": 76004
+    },
+    "brokenElementName": "Вводы высшего и низшего напряжения",
+    "brokenElementID": 0,
+    "isBroken": false,
+    "isToggle": false,
+    "brokenElementMaterial": {
+        "instanceID": 75910
+    }
+}{
+    "brokenElementObject": {
+        "instanceID": 75988
+    },
+    "brokenElementName": "Предохранительный клапан",
+    "brokenElementID": 0,
+    "isBroken": false,
+    "isToggle": false,
+    "brokenElementMaterial": {
+        "instanceID": 75664
+    }
+}{
+    "brokenElementObject": {
+        "instanceID": 75984
+    },
+    "brokenElementName": "Баки расширителя трансформатора и контактора РПН с маслоуказателями",
+    "brokenElementID": 0,
+    "isBroken": false,
+    "isToggle": false,
+    "brokenElementMaterial": {
+        "instanceID": 75564
+    }
+}{
+    "brokenElementObject": {
+        "instanceID": 75980
+    },
+    "brokenElementName": "Воздухоосушительный фильтр",
+    "brokenElementID": 0,
+    "isBroken": false,
+    "isToggle": false,
+    "brokenElementMaterial": {
+        "instanceID": 75588
+    }
+}{
+    "brokenElementObject": {
+        "instanceID": 75996
+    },
+    "brokenElementName": "Термосигнализаторы",
+    "brokenElementID": 0,
+    "isBroken": true,
+    "isToggle": false,
+    "brokenElementMaterial": {
+        "instanceID": 75746
+    }
+}{
+    "brokenElementObject": {
+        "instanceID": 75992
+    },
+    "brokenElementName": "Масляный бак трансформатора",
+    "brokenElementID": 0,
+    "isBroken": true,
+    "isToggle": false,
+    "brokenElementMaterial": {
+        "instanceID": 75540
+    }
+}{
+    "brokenElementObject": {
+        "instanceID": 76000
+    },
+    "brokenElementName": "Газовое реле трансформатора и РПН",
+    "brokenElementID": 0,
+    "isBroken": false,
+    "isToggle": false,
+    "brokenElementMaterial": {
+        "instanceID": 75920
+    }
+}
