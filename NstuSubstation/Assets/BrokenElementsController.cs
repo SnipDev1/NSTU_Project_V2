@@ -32,11 +32,6 @@ public class BrokenElementsController : MonoBehaviour
     {
         SetRandomBoolForSomeInstances(brokenElementsNum);
     }
-
-    private void NextPoint()
-    {
-        
-    }
     
     #region Broken Element Generation & Control
     private void SetRandomBoolForSomeInstances(int count)

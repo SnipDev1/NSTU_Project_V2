@@ -17,7 +17,6 @@ namespace Multimedia
                 elementObservation = FindObjectOfType<ElementObservation>();
             }
         }
-        
 
         public IEnumerator NextClip()
         {
@@ -30,6 +29,7 @@ namespace Multimedia
             _isClipCoroutineActive = false;
 
         }
+        
         public IEnumerator PreviousClip()
         {
             if (_isClipCoroutineActive) yield break; 

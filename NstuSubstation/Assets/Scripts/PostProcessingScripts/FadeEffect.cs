@@ -18,7 +18,6 @@ namespace PostProcessingScripts
             volume.profile.TryGet(out _colorAdjustments);
         }
         
-        
         public IEnumerator IncreaseOpacity()
         {
             while (GetOpacity() < endOpacity)
@@ -29,7 +28,6 @@ namespace PostProcessingScripts
             }
 
             _colorAdjustments.postExposure.value = endOpacity;
-            
         }
 
         public IEnumerator DecreaseOpacity()
@@ -41,9 +39,7 @@ namespace PostProcessingScripts
                 yield return null;
             }
 
-
             _colorAdjustments.postExposure.value = startOpacity;
-            
         }
         
         /*
