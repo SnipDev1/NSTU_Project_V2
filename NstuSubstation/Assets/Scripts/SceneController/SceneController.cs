@@ -22,14 +22,14 @@ namespace SceneController
             DontDestroyOnLoad(gameObject);
         }
 
-        private const int LoadSceneId = 4;
+        private const int LoadSceneId = 3;
 
         public void LoadSceneAsync(int sceneId)
         {
-            SceneManager.LoadSceneAsync(LoadSceneId);
-            SceneManager.LoadSceneAsync(sceneId);
-            // StartCoroutine(LoadSceneCoroutine(LoadSceneId));
-            // StartCoroutine(LoadSceneCoroutine(sceneId));
+            // SceneManager.LoadSceneAsync(LoadSceneId);
+            // SceneManager.LoadSceneAsync(sceneId);
+            StartCoroutine(LoadSceneCoroutine(LoadSceneId));
+            StartCoroutine(LoadSceneCoroutine(sceneId));
         }
 
         private static IEnumerator LoadSceneCoroutine(int sceneId)

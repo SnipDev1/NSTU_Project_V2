@@ -16,7 +16,6 @@ namespace Excursion.ElementObservation
             public GameObject elementObservationPoint;
 
             public string elementName;
-            public int elementId;
 
             public string elementHeaderText;
             public string elementBodyText;
@@ -53,6 +52,16 @@ namespace Excursion.ElementObservation
 
         public void NextPoint() // Переход к следующей точке осмотра объекта    
         {
+            if (currentPoint == -1)
+            {
+                currentPoint++;
+                Player.instance.transform.position = kElements[currentPoint].elementObservationPoint.transform.position; // Телепорт к следующей точке
+                playerCamera.transform.LookAt(kElements[currentPoint].elementObject.transform); // Резкий переход камеры на объект ??
+                audioSource.clip = kElements[currentPoint].elementAudio; // Задаем клип аудиосоурсу, получая его с объекта
+                audioSource.Play();
+                kElements[currentPoint].elementOutlinable.OutlineParameters.Enabled = true;
+                return;
+            }
             // ВАЖНО понимать, что из-за этой логики телепорт игрока начинается с 1-й точки, а не с 0-й.
 
             if (currentPoint == 0)

@@ -1,100 +1,100 @@
 {
     "brokenElementObject": {
-        "instanceID": 76014
+        "instanceID": 122798
     },
     "brokenElementName": "Диспетчерское наименование",
-    "brokenElementID": 0,
-    "isBroken": false,
-    "isToggle": false,
-    "brokenElementMaterial": {
-        "instanceID": 75878
-    }
-}{
-    "brokenElementObject": {
-        "instanceID": 76008
-    },
-    "brokenElementName": "Шкаф РПН",
     "brokenElementID": 0,
     "isBroken": true,
     "isToggle": false,
     "brokenElementMaterial": {
-        "instanceID": 76026
+        "instanceID": 122662
     }
 }{
     "brokenElementObject": {
-        "instanceID": 76004
+        "instanceID": 122792
+    },
+    "brokenElementName": "Шкаф РПН",
+    "brokenElementID": 0,
+    "isBroken": false,
+    "isToggle": false,
+    "brokenElementMaterial": {
+        "instanceID": 122810
+    }
+}{
+    "brokenElementObject": {
+        "instanceID": 122788
     },
     "brokenElementName": "Вводы высшего и низшего напряжения",
     "brokenElementID": 0,
     "isBroken": false,
     "isToggle": false,
     "brokenElementMaterial": {
-        "instanceID": 75910
+        "instanceID": 122694
     }
 }{
     "brokenElementObject": {
-        "instanceID": 75988
+        "instanceID": 122772
     },
     "brokenElementName": "Предохранительный клапан",
     "brokenElementID": 0,
     "isBroken": false,
     "isToggle": false,
     "brokenElementMaterial": {
-        "instanceID": 75664
+        "instanceID": 122448
     }
 }{
     "brokenElementObject": {
-        "instanceID": 75984
+        "instanceID": 122768
     },
     "brokenElementName": "Баки расширителя трансформатора и контактора РПН с маслоуказателями",
     "brokenElementID": 0,
-    "isBroken": false,
+    "isBroken": true,
     "isToggle": false,
     "brokenElementMaterial": {
-        "instanceID": 75564
+        "instanceID": 122348
     }
 }{
     "brokenElementObject": {
-        "instanceID": 75980
+        "instanceID": 122764
     },
     "brokenElementName": "Воздухоосушительный фильтр",
     "brokenElementID": 0,
     "isBroken": false,
     "isToggle": false,
     "brokenElementMaterial": {
-        "instanceID": 75588
+        "instanceID": 122372
     }
 }{
     "brokenElementObject": {
-        "instanceID": 75996
+        "instanceID": 122780
     },
     "brokenElementName": "Термосигнализаторы",
     "brokenElementID": 0,
-    "isBroken": true,
+    "isBroken": false,
     "isToggle": false,
     "brokenElementMaterial": {
-        "instanceID": 75746
+        "instanceID": 122530
     }
 }{
     "brokenElementObject": {
-        "instanceID": 75992
+        "instanceID": 122776
     },
     "brokenElementName": "Масляный бак трансформатора",
     "brokenElementID": 0,
     "isBroken": true,
     "isToggle": false,
     "brokenElementMaterial": {
-        "instanceID": 75540
+        "instanceID": 122324
     }
 }{
     "brokenElementObject": {
-        "instanceID": 76000
+        "instanceID": 122784
     },
     "brokenElementName": "Газовое реле трансформатора и РПН",
     "brokenElementID": 0,
     "isBroken": false,
     "isToggle": false,
     "brokenElementMaterial": {
-        "instanceID": 75920
+        "instanceID": 122704
     }
 }
